@@ -4,6 +4,7 @@ const serviceAccount = require("../todoapp-27064-firebase-adminsdk-ly2fc-f85c132
 admin.initializeApp({
 	credential: admin.credential.cert(serviceAccount),
 	databaseURL: "https://todoapp-27064.firebaseio.com",
+	storageBucket: "gs://todoapp-27064.appspot.com",
 });
 
 // admin.initializeApp();
